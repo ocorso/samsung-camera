@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<package version="1.0">
+
+	<name>OAuth</name>
+	<summary>OAuth Library</summary>
+	<description>
+		OAuth specification implementation
+	</description>
+	<license>The MIT License</license>
+	<maintainers>
+		<maintainer>
+			<user>jhart</user>
+			<name>Justin Hart</name>
+			<email>jhart@photobucket.com</email>
+			<role>lead</role>
+		</maintainer>
+	</maintainers>
+
+	<release>
+		<version>0.1.0</version>
+		<date>2008-05-19</date>
+		<state>beta</state>
+		<notes>
+			This is an early, non-publicly tested release.
+		</notes>
+		<filelist>
+			<dir name="/" baseinstalldir="OAuth">
+				<file role="php" name="Consumer.php" />
+				<file role="php" name="Request.php" />
+				<file role="php" name="Signature.php" />
+				<file role="php" name="Token.php" />
+				<file role="php" name="Utils.php" />
+				<dir name="Signature">
+					<file role="php" name="hmac_sha1.php" />
+					<file role="php" name="Interface.php" />
+					<file role="php" name="plaintext.php" />
+				</dir>
+			</dir>
+		</filelist>
+	</release>
+
+    <deps>
+        <dep type="php" rel="ge" version="5.1.0" />
+    </deps>
+
+</package>
